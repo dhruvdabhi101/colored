@@ -8,9 +8,11 @@ gleam add colored
 ```
 ```gleam
 import colored
+import gleam/io
 
 pub fn main() {
   // TODO: An example of the project in use
+    io.println(colored.green("Colored"))
 }
 ```
 
