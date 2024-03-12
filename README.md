@@ -1,6 +1,6 @@
 # colored
 
-colored is a simple tool with which we can use to give color to the text. 
+colored is a simple tool with which we can use to give color to the text.
 
 [![Package Version](https://img.shields.io/hexpm/v/colored)](https://hex.pm/packages/colored)
 [![Hex Docs](https://img.shields.io/badge/hex-docs-ffaff3)](https://hexdocs.pm/colored/)
@@ -13,7 +13,6 @@ import colored
 import gleam/io
 
 pub fn main() {
-  // TODO: An example of the project in use
     io.println(colored.green("Colored"))
 }
 ```
