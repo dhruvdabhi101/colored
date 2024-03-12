@@ -1,10 +1,10 @@
 name = "colored"
 version = "1.0.0"
 
- description = "Simple CLI color library"
- licences = ["Apache-2.0"]
- repository = { type = "github", user = "dhruvdabhi101", repo = "https://github.com/dhruvdabhi101/colored" }
- links = [{ title = "Website", href = "https://gleam.run" }]
+description = "Simple CLI color library for gleam"
+licences = ["MIT"]
+repository = { type = "github", user = "dhruvdabhi101", repo = "https://github.com/dhruvdabhi101/colored" }
+links = [{ title = "Website", href = "https://gleam.run" }]
 
 [dependencies]
 gleam_stdlib = "~> 0.34 or ~> 1.0"

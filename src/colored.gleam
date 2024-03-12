@@ -40,5 +40,5 @@ pub fn cyan(text: String) {
 }
 
 pub fn main() {
-  io.println(green("dhruv"))
+  io.println(green("colored"))
 }
