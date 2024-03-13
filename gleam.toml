@@ -3,7 +3,7 @@ version = "1.0.1"
 
 description = "Simple CLI color library for gleam"
 licences = ["MIT"]
-repository = { type = "github", user = "dhruvdabhi101", repo = "https://github.com/dhruvdabhi101/colored" }
+repository = { type = "github", user = "dhruvdabhi101", repo = "colored" }
 links = [{ title = "Website", href = "https://gleam.run" }]
 
 [dependencies]
