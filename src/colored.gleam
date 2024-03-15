@@ -1,5 +1,6 @@
 // io.println("\u{001b}[2m Hello from colored! \u{001b}[0m  Hello")
 import gleam/io
+import gleam/int.{clamp}
 
 const red_color = "\u{001b}[31m"
 
@@ -14,6 +15,8 @@ const magenta_color = "\u{001b}[35m"
 const cyan_color = "\u{001b}[36m"
 
 const colorless = "\u{001b}[0m"
+
+const rgb_color = "\u{001b}[38;2;"
 
 pub fn green(text: String) {
   green_color <> text <> colorless
@@ -37,6 +40,18 @@ pub fn magenta(text: String) {
 
 pub fn cyan(text: String) {
   cyan_color <> text <> colorless
+}
+
+pub fn rgb(text: String, r: Int, g: Int, b: Int) -> String {
+  rgb_color
+  <> int.to_string(clamp(r, 0, 255))
+  <> ";"
+  <> int.to_string(clamp(g, 0, 255))
+  <> ";"
+  <> int.to_string(clamp(b, 0, 255))
+  <> "m"
+  <> text
+  <> colorless
 }
 
 pub fn main() {
